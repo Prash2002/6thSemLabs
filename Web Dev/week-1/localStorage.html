@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <div > You visited this page <span id="vs"></span> </div>
+    <script type="text/javascript">
+    console.log("test");
+         console.log( localStorage.getItem("visit"))
+         
+        if( localStorage.getItem("visit").length === 0){
+            localStorage.setItem("visit", 1);
+        }
+        else{ localStorage.setItem("visit", parseInt(localStorage.getItem("visit")) + 1);}
+        document.getElementById("vs").innerHTML = localStorage.getItem("visit") + " number of times";
+    </script>
+</body>
+</html>
