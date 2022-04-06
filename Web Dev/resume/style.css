@@ -1,0 +1,58 @@
+h1{
+    text-align: center;
+    font-family: "Lucida Console", "Courier New" ;
+}
+.left-sec{
+    float: left;
+    width: 20vw;
+    border-right: rgba(128, 128, 128, 0.582) 2px solid ;
+    padding-left: 40px;
+    margin-right: 60px;
+}
+/* h3{
+     font-family:fantasy; 
+} */
+h5{
+    margin: 0px !important;
+}
+a{
+    display: inline-block;
+    width: 130px !important;
+    color: rgba(0, 0, 0, 0.712);
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: black;
+    color: rgba(255, 255, 255, 0.829);
+}
+/* *{
+    margin: 0;
+} */
+
+/* .right-sec{
+
+} */
+
+    /* width: 60vw; */
+    /* border: black solid; */
+    /* margin-left: 60px; */
+
+ul{
+
+    /* border: black solid;
+    margin-left: 60px; */
+    list-style: square;
+}
+
+.head{
+    margin-top: 0px !important;
+    background-color: rgba(34, 46, 70,1);
+    color: rgba(203,173,133,1) !important;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+p, ul{
+
+    color: rgba(0, 0, 0, 0.712);
+}
