@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Represent a small bilingual lexicon as a Javascript object in the following fashion {"merry":"god", "christmas":"jul", "and":"och", "happy":gott", "new":"nytt", "year":"år"} and use it to translate your Christmas cards from English into Swedish.
+    <script>
+        const map = {"merry":"god", "christmas":"jul", "and":"och", "happy":"gott", "new":"nytt", "year":"år"};
+        var s = prompt("Enter your Christmas message: ");
+        var a= s.split(' ');
+        var swedish = "";
+        a.forEach(i => {
+            if(map[i]!==undefined) swedish += map[i] + ' ';
+            else swedish += i + ' ';
+        });
+        alert(swedish);
+    </script>
+
+</body>
+</html>
