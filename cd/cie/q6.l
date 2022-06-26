@@ -1,0 +1,30 @@
+%{
+#include<stdio.h>
+int c=1;
+FILE *fp;
+%}
+%s DECLARE VAR
+identifier [a-zA-Z][a-zA-Z0-9]*
+number [0-9]+([.][0-9]*)?
+string ["][a-zA-Z0-9]+["]
+%%
+\n {c++;}
+("int"|"float") {BEGIN DECLARE; printf("declaration at line %d\n", c); }
+<DECLARE>{identifier}("="{number})? {BEGIN VAR;}
+<DECLARE>{identifier}" = "{string} {printf("Invalid declaration at line %d\n", c); BEGIN VAR;}
+<VAR>";" {BEGIN 0;}
+<VAR>"," {BEGIN DECLARE;}
+<VAR>[,]" "[,]+ {printf("Invalid! dont use 2 commas at line %d\n", c);}
+<VAR>. ;
+<VAR>[\n]+ {c++; BEGIN 0;}
+. ;
+%%
+
+void main(){
+    yyin = fopen("../sample/string.c", "r");
+    yylex();
+    fclose(yyin);
+}
+
+
+
