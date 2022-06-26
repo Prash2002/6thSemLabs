@@ -1,13 +1,18 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main(){
+int main()
+{
+    /* test */
 
-    char a[50] ="Hi, this a normal string";
+    char a[50] = "Hi this a normal string";
+    /*test
+    two */
     int x, y;
     printf("A normal statement");
-    //comment
-    char b[100]=" this is a problem 
-    fosho; ";
 
-    return 0;
+    char b[100] = " this is a problem 
+        fosho;
+    ";
+
+        return 0;
 }
