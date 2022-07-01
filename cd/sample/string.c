@@ -13,5 +13,13 @@ void main()
     char b[100] = " this is a problem 
         fosho;
     ";
+        if (
+            (a * c) == (b + d)
+
+        /*
+    {
+    }
+    if ( a
+    {
         return 0;
 }
