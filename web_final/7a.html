@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Design a Student Form using HTML5 which has following fields
+    a) Name : Required must be characters
+    b) Email : Validation placeholder: please enter valid email address
+    c) Phone : accept numbers in the following format (080-555-5555)
+    d) Semester : For the range 1 to 8
+    e) Branch :Data list
+    f) Website :Required pattern of the form-http:// -->
+    <form action="get">
+        Name: <input type="text">
+        <br> <br>
+        Email: <input type="text" placeholder="please enter valid email address">
+        <br> <br>
+        Phone: <input type="text" pattern="080-[0-9]{3}-[0-9]{4}" placeholder="080-555-5555">
+        <br> <br>
+        Semester: <input type="number" min="1" max="8">
+        <br> <br>
+        Branch: <input list="branches">
+        <datalist id="branches">
+            <option value="CSE">
+                <option value="ISE">
+                    <option value="ECE">
+
+                    <option value="EEE">
+
+
+        </datalist>
+        website: <input type="text" pattern="http://.+">
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
