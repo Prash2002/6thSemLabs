@@ -1,0 +1,9 @@
+struct x{int a,b;};
+
+int a;
+
+if(a>b){}else if(b==c){}else{}
+
+else if(a==b){}
+
+if(r<=a){}
